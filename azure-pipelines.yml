@@ -16,4 +16,7 @@ steps:
   displayName: 'Install Node'
 
 - script: yarn install
-  displayName: 'Install dependencies'
+  displayName: 'Install Node dependencies'
+
+-script: cd ios && pod install && cd ..
+  displayName: 'Install Pod dependencies'
